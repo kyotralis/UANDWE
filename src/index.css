@@ -1,0 +1,7 @@
+/* MUST be at the very top */
+
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  font-family: "DM Sans", sans-serif;}
