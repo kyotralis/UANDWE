@@ -5,6 +5,7 @@ import automation from "../assets/images/automation.png"
 import telecom from "../assets/images/telecom.png"
 import medical from "../assets/images/medical.png"
 import semiconductor from "../assets/images/semiconductor.png"
+import { useNavigate } from "react-router-dom";
 
 
 const INDUSTRIES = [
@@ -16,7 +17,7 @@ const INDUSTRIES = [
   },
   {
     num: "02",
-    title: "Healthcare",
+    title: "Medical ",
     desc: "Transforming healthcare through precision robotics, smart diagnostics, and real-time medical imaging technologies.",
     img: medical,
   },
@@ -41,6 +42,7 @@ const slideVariants = {
 };
 
 export default function Industries() {
+  const navigate = useNavigate();
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -74,6 +76,13 @@ export default function Industries() {
       setCurrent(INDUSTRIES.length - 1);
     }
   }, [current]);
+
+  const routeMap = {
+  "Automotive": "/industries/automotive",
+  "Healthcare": "/industries/medical",
+  "Telecom & Networking": "/industries/telecom",
+  "Semiconductor": "/industries/semiconductor",
+};
 
   // Intersection Observer to detect when component is in view
   useEffect(() => {
@@ -209,8 +218,7 @@ export default function Industries() {
         </h2>
       </div>
 
-      <div className="absolute top-20 md:top-24 right-[5%] z-20 flex gap-3">
-        <button
+<div className="absolute top-[120px] sm:top-24 md:top-24 right-[5%] z-20 flex gap-3">        <button
           onClick={handlePrev}
           className="w-10 h-10 rounded-full border border-white/25 text-white hover:border-orange-500/60 hover:text-orange-400 flex items-center justify-center transition-all duration-300"
           aria-label="Previous slide"
@@ -247,10 +255,13 @@ export default function Industries() {
               {industry.desc}
             </p>
 
-            <button className="group flex items-center gap-2 text-orange-500 text-[12px] font-bold tracking-[0.2em] uppercase hover:text-orange-400 transition-colors">
-              VIEW SOLUTIONS
-              <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
-            </button>
+           <button
+  onClick={() => navigate(routeMap[industry.title])}
+  className="group flex items-center gap-2 text-orange-500 text-[12px] font-bold tracking-[0.2em] cursor-pointer uppercase hover:text-orange-400 transition-colors"
+>
+  VIEW SOLUTIONS
+  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
+</button>
           </motion.div>
         </AnimatePresence>
       </div>

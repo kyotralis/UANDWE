@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Medical = () => {
   return (
     <div className="bg-black text-white overflow-hidden">

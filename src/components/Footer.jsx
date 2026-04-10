@@ -1,77 +1,106 @@
-export default function Footer() {
+import React from "react";
+
+const Footer = () => {
   return (
-    <footer style={{ background: "#070710", borderTop: "1px solid rgba(255,255,255,0.08)", padding: "5rem 5% 2.5rem", fontFamily: "'DM Sans', sans-serif" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "2fr 1fr 1fr 1.3fr", gap: "3rem", marginBottom: "3.5rem" }}>
-        {/* Brand */}
+    <footer className="bg-[#070710] border-t border-white/10 px-[5%] py-10 font-[DM Sans] overflow-x-hidden">
+      
+      {/* GRID */}
+      <div className="grid gap-10 mb-12 
+        grid-cols-1 
+        sm:grid-cols-2 
+        lg:grid-cols-4">
+
+        {/* BRAND */}
         <div>
-          <div style={{ fontFamily: "'Syne', sans-serif", fontSize: "1.8rem", fontWeight: 800, letterSpacing: -1 }}>
-          <span style={{ color: "#ff6b1a" }}>UANDWE</span>
-          </div>
-          <p style={{ color: "#8a8a9a", fontSize: "0.875rem", lineHeight: 1.7, margin: "1rem 0 1.5rem", maxWidth: 280 }}>
-            Engineering the future through precision, intelligence, and relentless innovation. Trusted by global technology leaders.
+          <h2 className="text-2xl font-extrabold tracking-tight">
+            <span className="text-[#ff6b1a]">UANDWE</span>
+          </h2>
+
+          <p className="text-[#8a8a9a] text-sm leading-7 mt-4 max-w-[280px]">
+            Engineering the future through precision, intelligence, and relentless innovation.
           </p>
-          <div style={{ display: "flex", gap: "0.75rem" }}>
-            {["in", "𝕏", "⌥", "▶"].map(icon => (
-              <a key={icon} href="#" style={{ width: 38, height: 38, border: "1px solid rgba(255,255,255,0.08)", borderRadius: 6, display: "flex", alignItems: "center", justifyContent: "center", color: "#8a8a9a", textDecoration: "none", fontSize: "0.85rem", transition: "all 0.2s" }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = "#ff6b1a"; e.currentTarget.style.color = "#ff6b1a"; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)"; e.currentTarget.style.color = "#8a8a9a"; }}>
+
+          <div className="flex gap-3 mt-5">
+            {["in", "𝕏", "⌥", "▶"].map((icon) => (
+              <div
+                key={icon}
+                className="w-9 h-9 border border-white/10 rounded-md flex items-center justify-center text-[#8a8a9a] hover:text-[#ff6b1a] hover:border-[#ff6b1a] transition"
+              >
                 {icon}
-              </a>
+              </div>
             ))}
           </div>
         </div>
 
-        {/* Company */}
+        {/* COMPANY */}
         <div>
-          <h4 style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.85rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, color: "#fff", marginBottom: "1.25rem" }}>Company</h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {["About Us", "Innovation", "Careers", "Newsroom", "Investors"].map(l => (
-              <li key={l} style={{ marginBottom: "0.6rem" }}>
-                <a href="#" style={{ color: "#8a8a9a", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => e.currentTarget.style.color = "#ff6b1a"}
-                  onMouseLeave={e => e.currentTarget.style.color = "#8a8a9a"}>{l}</a>
+          <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-5">
+            Company
+          </h4>
+          <ul className="space-y-2">
+            {["About Us", "Innovation", "Careers", "Newsroom", "Investors"].map((l) => (
+              <li key={l}>
+                <a className="text-sm text-[#8a8a9a] hover:text-[#ff6b1a]">
+                  {l}
+                </a>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Services */}
+        {/* SERVICES */}
         <div>
-          <h4 style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.85rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, color: "#fff", marginBottom: "1.25rem" }}>Services</h4>
-          <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
-            {["Semiconductor Eng.", "Embedded Systems", "Automotive", "AI & Software", "Consulting"].map(l => (
-              <li key={l} style={{ marginBottom: "0.6rem" }}>
-                <a href="#" style={{ color: "#8a8a9a", textDecoration: "none", fontSize: "0.875rem", transition: "color 0.2s" }}
-                  onMouseEnter={e => e.currentTarget.style.color = "#ff6b1a"}
-                  onMouseLeave={e => e.currentTarget.style.color = "#8a8a9a"}>{l}</a>
+          <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-5">
+            Services
+          </h4>
+          <ul className="space-y-2">
+            {["Semiconductor Eng.", "Embedded Systems", "Automotive", "AI & Software", "Consulting"].map((l) => (
+              <li key={l}>
+                <a className="text-sm text-[#8a8a9a] hover:text-[#ff6b1a]">
+                  {l}
+                </a>
               </li>
             ))}
           </ul>
         </div>
 
-        {/* Contact */}
+        {/* CONTACT */}
         <div>
-          <h4 style={{ fontFamily: "'Syne', sans-serif", fontSize: "0.85rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: 1.5, color: "#fff", marginBottom: "1.25rem" }}>Contact</h4>
-          {[["Headquarters", "Bengaluru, Karnataka, India 560001"], ["Email", "hello@uandwe.com"], ["Phone", "+91 80 4200 0000"], ["Global Offices", "US · UK · Germany · Japan"]].map(([label, val]) => (
-            <p key={label} style={{ fontSize: "0.875rem", color: "#8a8a9a", lineHeight: 1.7, marginBottom: "0.75rem" }}>
-              <strong style={{ color: "#fff", display: "block", marginBottom: "0.2rem", fontSize: "0.8rem", textTransform: "uppercase", letterSpacing: "0.5px" }}>{label}</strong>
-              {val}
+          <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-5">
+            Contact
+          </h4>
+
+          <div className="space-y-3 text-sm text-[#8a8a9a]">
+            <p>
+              <span className="text-white block text-xs uppercase">Headquarters</span>
+              Bengaluru, India
             </p>
-          ))}
+            <p>
+              <span className="text-white block text-xs uppercase">Email</span>
+              hello@uandwe.com
+            </p>
+            <p>
+              <span className="text-white block text-xs uppercase">Phone</span>
+              +91 80 4200 0000
+            </p>
+          </div>
         </div>
       </div>
 
-      {/* Bottom */}
-      <div style={{ borderTop: "1px solid rgba(255,255,255,0.08)", paddingTop: "2rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
-        <p style={{ fontSize: "0.8rem", color: "#8a8a9a", margin: 0 }}>© 2025 UANDWE Technologies Pvt. Ltd. All rights reserved.</p>
-        <div style={{ display: "flex", gap: "1.5rem" }}>
-          {["Privacy Policy", "Terms of Use", "Cookies"].map(l => (
-            <a key={l} href="#" style={{ fontSize: "0.8rem", color: "#8a8a9a", textDecoration: "none" }}
-              onMouseEnter={e => e.currentTarget.style.color = "#ff6b1a"}
-              onMouseLeave={e => e.currentTarget.style.color = "#8a8a9a"}>{l}</a>
+      {/* BOTTOM */}
+      <div className="border-t border-white/10 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-[#8a8a9a]">
+        <p>© 2025 UANDWE Technologies Pvt. Ltd.</p>
+
+        <div className="flex gap-6">
+          {["Privacy Policy", "Terms of Use", "Cookies"].map((l) => (
+            <a key={l} className="hover:text-[#ff6b1a]">
+              {l}
+            </a>
           ))}
         </div>
       </div>
     </footer>
   );
-}   
+};
+
+export default Footer;

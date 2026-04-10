@@ -3,5 +3,11 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 body {
-  font-family: "DM Sans", sans-serif;}
+  font-family: "DM Sans", sans-serif;
+}

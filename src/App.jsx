@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 // HOME PAGE
 import Home from "./components/Home";
@@ -36,6 +37,7 @@ import OpenPosition from "./pages/Careers/Openposition";
 export default function App() {
   return (
     <div
+          className="overflow-x-hidden"
       style={{
         background: "#0a0a0f",
         color: "#fff",
@@ -44,6 +46,7 @@ export default function App() {
     >
       {/* HEADER */}
       <Header />
+      <ScrollToTop /> 
 
       {/* ROUTES */}
       <Routes>

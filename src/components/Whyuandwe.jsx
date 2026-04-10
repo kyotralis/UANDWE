@@ -1,41 +1,39 @@
-import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { useEffect, useState, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
 /* ─── ANIMATED NUMBER ───────────────────────────── */
-function AnimatedNumber({ target, suffix = "", delay = 400 }) {
+function AnimatedNumber({ target, suffix = "", shouldAnimate }) {
   const [value, setValue] = useState(0);
-  const [startAnim, setStartAnim] = useState(false);
 
   useEffect(() => {
-    const t = setTimeout(() => {
-      setStartAnim(true);
+    if (!shouldAnimate) {
+      setValue(0);
+      return;
+    }
 
-      let start = 0;
-      const duration = 1200;
-      const step = 16;
-      const increment = target / (duration / step);
+    let start = 0;
+    const duration = 1200;
+    const step = 16;
+    const increment = target / (duration / step);
 
-      const timer = setInterval(() => {
-        start += increment;
-        if (start >= target) {
-          setValue(target);
-          clearInterval(timer);
-        } else {
-          setValue(Math.floor(start));
-        }
-      }, step);
+    const timer = setInterval(() => {
+      start += increment;
+      if (start >= target) {
+        setValue(target);
+        clearInterval(timer);
+      } else {
+        setValue(Math.floor(start));
+      }
+    }, step);
 
-      return () => clearInterval(timer);
-    }, delay);
-
-    return () => clearTimeout(t);
-  }, [target, delay]);
+    return () => clearInterval(timer);
+  }, [target, shouldAnimate]);
 
   return (
     <motion.span
       initial={{ rotateX: -90, opacity: 0 }}
       animate={
-        startAnim
+        shouldAnimate
           ? { rotateX: 0, opacity: 1 }
           : { rotateX: -90, opacity: 0 }
       }
@@ -61,8 +59,26 @@ const stats = [
 
 /* ─── MAIN COMPONENT ───────────────────────────── */
 export default function WhyChooseUs() {
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { 
+    once: true,  // Animate only once when it comes into view
+    margin: "-100px 0px -100px 0px" // Trigger when component is 100px into viewport
+  });
+  
+  const [hasAnimated, setHasAnimated] = useState(false);
+  
+  // Track if animation has started
+  useEffect(() => {
+    if (isInView && !hasAnimated) {
+      setHasAnimated(true);
+    }
+  }, [isInView, hasAnimated]);
+
   return (
-    <section className="bg-[#0b0b12] text-white px-[6%] pt-24 pb-20">
+    <section 
+      ref={sectionRef}
+      className="bg-[#0b0b12] text-white px-[6%] pt-24 pb-20"
+    >
 
       {/* HEADER */}
       <div className="max-w-6xl mx-auto mb-16">
@@ -102,12 +118,12 @@ export default function WhyChooseUs() {
             {/* Content */}
             <div className="flex flex-col items-center text-center gap-3 mt-6">
 
-              {/* Number (ROTATE + COUNT) */}
+              {/* Number (ROTATE + COUNT) - Only animate when section is in view */}
               <h3 className="text-[48px] md:text-[56px] font-black text-white leading-none perspective-[1000px]">
                 <AnimatedNumber
                   target={stat.value}
                   suffix={stat.suffix}
-                  delay={i * 200}
+                  shouldAnimate={hasAnimated}
                 />
               </h3>
 
