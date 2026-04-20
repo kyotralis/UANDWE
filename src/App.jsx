@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 
 // HOME PAGE
-import Home from "./components/Home";
+import Home from "./pages/Home";
 
 // ABOUT PAGES
 import CompanyOverview from "./pages/About/Companyoverview";

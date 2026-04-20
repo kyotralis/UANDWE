@@ -1,9 +1,9 @@
 import Hero from "../components/Hero";
 import Services from "../components/Services";
 import About from "../components/About";
-import WhyChooseUs from "./Whyuandwe";
+import WhyChooseUs from "../components/Whyuandwe";
 import Contactus from "../components/ContactUs";
-import Industries from "./Sectorweserve";
+import Industries from "../components/Sectorweserve";
 
 const Home = () => {
   return (

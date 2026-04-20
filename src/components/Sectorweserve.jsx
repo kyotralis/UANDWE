@@ -9,30 +9,32 @@ import { useNavigate } from "react-router-dom";
 
 
 const INDUSTRIES = [
-  {
+   {
     num: "01",
-    title: "Automotive",
-    desc: "Driving the future of mobility with advanced driver assistance systems, electric vehicle platforms, and intelligent safety solutions.",
-    img: automation
+    title: "Semiconductor",
+    desc: "Building the foundation of modern technology through advanced chip design, high-performance processors, and scalable silicon solutions.",
+    img: semiconductor
   },
-  {
+   {
     num: "02",
-    title: "Medical ",
-    desc: "Transforming healthcare through precision robotics, smart diagnostics, and real-time medical imaging technologies.",
-    img: medical,
-  },
-  {
-    num: "03",
     title: "Telecom & Networking",
     desc: "Enabling high-speed connectivity with next-generation telecom infrastructure, 5G networks, and scalable cloud communication systems.",
     img: telecom,
   },
   {
-    num: "04",
-    title: "Semiconductor",
-    desc: "Building the foundation of modern technology through advanced chip design, high-performance processors, and scalable silicon solutions.",
-    img: semiconductor
+    num: "03",
+    title: "Automotive",
+    desc: "Driving the future of mobility with advanced driver assistance systems, electric vehicle platforms, and intelligent safety solutions.",
+    img: automation
   },
+  {
+    num: "04",
+    title: "Medical ",
+    desc: "Transforming healthcare through precision robotics, smart diagnostics, and real-time medical imaging technologies.",
+    img: medical,
+  },
+ 
+ 
 ];
 
 const slideVariants = {
