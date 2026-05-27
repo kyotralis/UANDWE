@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import rotateImg from "../assets/images/rotate.png";
 import { Eye, Target, BookOpen, ArrowRight } from "lucide-react";
 
 const cards = [
@@ -45,7 +46,7 @@ export default function About() {
           transition={{ repeat: Infinity, duration: 120, ease: "linear" }}
         >
           <img
-            src="/src/assets/images/rotate.png"
+src={rotateImg}
             alt=""
             className="w-full h-full object-contain opacity-20 sm:opacity-25 md:opacity-30"
             loading="lazy"
