@@ -254,12 +254,7 @@ function CapCard({ item, index, total, hoveredIndex, onHover, onLeave, onViewSpe
               </span>
             ))}
           </div>
-          <button
-            onClick={() => onViewSpec(item)}
-            className="inline-flex items-center gap-2 bg-[#ff6b1a] text-white border-none py-2 px-[18px] text-[9px] font-bold tracking-[0.15em] uppercase rounded-[20px] cursor-pointer font-sans transition-colors duration-200 hover:bg-[#e85f14]"
-          >
-            VIEW SPEC →
-          </button>
+        
         </div>
       </div>
     </div>
