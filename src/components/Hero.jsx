@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { ImageTrail } from "../components/ui/image-trail";
-import videoBg from "../assets/images/UAW.mp4"
+import videoBg from "../assets/images/uaw.mp4"
 
 
 export default function Hero({ title, description, badge }) {
