@@ -245,9 +245,9 @@ export default function Industries() {
             exit={{ opacity: 0, y: -15 }}
             transition={{ duration: 0.45, ease: "easeOut" }}
           >
-            <span className="block text-orange-500 text-[11px] font-semibold tracking-[0.25em] uppercase mb-5">
+            {/* <span className="block text-orange-500 text-[11px] font-semibold tracking-[0.25em] uppercase mb-5">
               {industry.num} / INDUSTRY
-            </span>
+            </span> */}
 
             <h3 className="text-[clamp(2rem,4.5vw,3.5rem)] font-extrabold tracking-tight leading-tight mb-4">
               {industry.title}

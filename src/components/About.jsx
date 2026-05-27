@@ -63,7 +63,7 @@ export default function About() {
           Shaping <br className="hidden sm:block" />
           tomorrow's <br className="sm:hidden md:block" />
           technology, <span className="relative z-10 text-orange-500">today</span>
-       
+
         </h1>
 
         {/* Cards Grid - Responsive gap and columns */}
@@ -82,10 +82,9 @@ export default function About() {
                 min-h-[220px] sm:min-h-[260px] md:min-h-[280px] lg:min-h-[300px] 
                 flex flex-col
                 transition-all duration-500 group cursor-pointer
-                ${
-                  card.highlight
-                    ? "border border-orange-500/30 bg-[linear-gradient(145deg,rgba(255,107,26,0.07),rgba(255,255,255,0.02))]"
-                    : "border border-white/8 bg-[linear-gradient(145deg,rgba(255,255,255,0.055),rgba(255,255,255,0.015))]"
+                ${card.highlight
+                  ? "border border-orange-500/30 bg-[linear-gradient(145deg,rgba(255,107,26,0.07),rgba(255,255,255,0.02))]"
+                  : "border border-white/8 bg-[linear-gradient(145deg,rgba(255,255,255,0.055),rgba(255,255,255,0.015))]"
                 }
                 backdrop-blur-sm sm:backdrop-blur-md lg:backdrop-blur-2xl
                 shadow-[inset_0_1px_1px_rgba(255,255,255,0.07),0_12px_32px_rgba(0,0,0,0.5)]
@@ -104,10 +103,9 @@ export default function About() {
                   mb-4 sm:mb-5 md:mb-6
                   transition-all duration-300
                   group-hover:scale-105
-                  ${
-                    card.highlight
-                      ? "bg-orange-500/20 text-orange-400 border border-orange-500/30"
-                      : "bg-white/8 text-gray-300 border border-white/10"
+                  ${card.highlight
+                    ? "bg-orange-500/20 text-orange-400 border border-orange-500/30"
+                    : "bg-white/8 text-gray-300 border border-white/10"
                   }
                 `}
               >

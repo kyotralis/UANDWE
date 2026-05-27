@@ -60,13 +60,13 @@ const stats = [
 /* ─── MAIN COMPONENT ───────────────────────────── */
 export default function WhyChooseUs() {
   const sectionRef = useRef(null);
-  const isInView = useInView(sectionRef, { 
+  const isInView = useInView(sectionRef, {
     once: true,  // Animate only once when it comes into view
     margin: "-100px 0px -100px 0px" // Trigger when component is 100px into viewport
   });
-  
+
   const [hasAnimated, setHasAnimated] = useState(false);
-  
+
   // Track if animation has started
   useEffect(() => {
     if (isInView && !hasAnimated) {
@@ -75,7 +75,7 @@ export default function WhyChooseUs() {
   }, [isInView, hasAnimated]);
 
   return (
-    <section 
+    <section
       ref={sectionRef}
       className="bg-[#0b0b12] text-white px-[6%] pt-24 pb-20"
     >
