@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+@keyframes flow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -100; }
+}

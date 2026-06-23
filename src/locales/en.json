@@ -1,0 +1,319 @@
+{
+  "header": {
+    "what_we_do": "What we do",
+    "what_we_think": "What we think",
+    "who_we_are": "Who we are",
+    "careers": "Careers",
+    "search_placeholder": "What are you looking for?",
+    "search_results": "Search Results",
+    "no_results": "No results found for",
+    "languages": {
+      "china": "China",
+      "canada": "Canada",
+      "india": "India",
+      "usa": "USA"
+    }
+  },
+  "hero": {
+    "title_1": "Where Innovation Meets",
+    "title_2": "Engineering Excellence.",
+    "description": "A team of passionate tech entrepreneurs committed to building your product success."
+  },
+  "about": {
+    "heading": {
+      "line1": "Shaping",
+      "line2": "tomorrow's",
+      "line3": "technology,",
+      "highlight": "today"
+    },
+    "cards": {
+      "vision": {
+        "title": "Vision",
+        "desc": "To empower global innovation by bridging the gap between cutting-edge technology and human potential.",
+        "footer": "PERSPECTIVE"
+      },
+      "mission": {
+        "title": "Mission",
+        "desc": "We deliver exceptional engineering excellence across hardware, embedded systems, and software solutions.",
+        "footer": "PURPOSE"
+      },
+      "origin": {
+        "title": "Origin",
+        "desc": "Founded by visionary engineers, we have evolved into a global technology innovation hub.",
+        "footer": "HISTORY"
+      }
+    }
+  },
+  "industries": {
+    "heading_part1": "Industries We",
+    "heading_part2": "Power",
+    "view_solutions": "VIEW SOLUTIONS",
+    "items": {
+      "semiconductor": {
+        "title": "Semiconductor",
+        "desc": "Building the foundation of modern technology through advanced chip design, high-performance processors, and scalable silicon solutions."
+      },
+      "telecom": {
+        "title": "Communication & Networking",
+        "desc": "Enabling high-speed connectivity with next-generation telecom infrastructure, 5G networks, and scalable cloud communication systems."
+      },
+      "automotive": {
+        "title": "Automotive",
+        "desc": "Driving the future of mobility with advanced driver assistance systems, electric vehicle platforms, and intelligent safety solutions."
+      },
+      "medical": {
+        "title": "Medical",
+        "desc": "Transforming healthcare through precision robotics, smart diagnostics, and real-time medical imaging technologies."
+      }
+    }
+  },
+  "services": {
+    "explore_now": "Explore Now",
+    "core_part1": "CORE ",
+    "core_part2": "SERVICES",
+    "categories": {
+      "embedded_sw": {
+        "title": "Embedded SW",
+        "services": {
+          "s1": {
+            "name": "Device Drivers",
+            "desc": "Custom hardware interaction layers."
+          },
+          "s2": {
+            "name": "Firmware Development",
+            "desc": "Low-level system programming."
+          },
+          "s3": {
+            "name": "RTOS Development",
+            "desc": "Real-time task scheduling."
+          },
+          "s4": {
+            "name": "Embedded Linux",
+            "desc": "Custom OS porting and optimization."
+          },
+          "s5": {
+            "name": "BSP Development",
+            "desc": "Board support package creation."
+          },
+          "s6": {
+            "name": "Protocol Integration",
+            "desc": "I2C, SPI, CAN, and more."
+          }
+        }
+      },
+      "application": {
+        "title": "Application",
+        "services": {
+          "s1": {
+            "name": "Portal Development",
+            "desc": "Secure web portals tailored to streamline business operations."
+          },
+          "s2": {
+            "name": "App Development",
+            "desc": "High-performance mobile applications for iOS, Android, and cross-platform."
+          },
+          "s3": {
+            "name": "Cloud Solutions",
+            "desc": "Scalable, secure, and resilient cloud infrastructure tailored to your business needs."
+          },
+          "s4": {
+            "name": "UI/UX Design",
+            "desc": "Crafting intuitive, engaging user experiences and stunning interfaces."
+          },
+          "s5": {
+            "name": "API & Integrations",
+            "desc": "Connecting systems and third-party services through secure APIs."
+          },
+          "s6": {
+            "name": "Testing & Validation",
+            "desc": "Ensuring software reliability through comprehensive testing protocols."
+          }
+        }
+      },
+      "hardware_design": {
+        "title": "Hardware Design",
+        "services": {
+          "s1": {
+            "name": "PCB Design",
+            "desc": "Multi-layer high-speed board layout."
+          },
+          "s2": {
+            "name": "FPGA Design",
+            "desc": "Custom digital logic implementation."
+          },
+          "s3": {
+            "name": "ASIC Design",
+            "desc": "Application-specific integrated circuits."
+          },
+          "s4": {
+            "name": "Circuit Design",
+            "desc": "Analog and digital circuit schematics."
+          },
+          "s5": {
+            "name": "Hardware Prototyping",
+            "desc": "Rapid fabrication and assembly."
+          },
+          "s6": {
+            "name": "Hardware Validation",
+            "desc": "Rigorous testing and compliance."
+          }
+        }
+      },
+      "ai_ml": {
+        "title": "AI & ML",
+        "services": {
+          "s1": {
+            "name": "ALPR Systems",
+            "desc": "High-accuracy automatic license plate recognition."
+          },
+          "s2": {
+            "name": "Color Detection",
+            "desc": "Real-time vehicle color classification."
+          },
+          "s3": {
+            "name": "Make & Model Detection",
+            "desc": "Automated vehicle brand and model identification."
+          },
+          "s4": {
+            "name": "Vehicle Classification",
+            "desc": "Categorizing vehicles by type and size."
+          },
+          "s5": {
+            "name": "Vehicle Tracking",
+            "desc": "Multi-camera vehicle trajectory analysis."
+          },
+          "s6": {
+            "name": "Edge AI",
+            "desc": "On-device AI model deployment for zero-latency processing."
+          }
+        }
+      }
+    }
+  },
+  "whyus": {
+    "heading_1": "PARTNERS",
+    "heading_2": "",
+    "desc": "Collaborating with industry leaders to accelerate innovation and deliver world-class engineering solutions.",
+    "categories": {
+      "customer_gtm": "Customer & Go-To-Market Partners",
+      "industry": "Industry Partnerships"
+    },
+    "partners": {
+      "nvidia": "NVIDIA",
+      "renesas": "RENESAS",
+      "microchip": "MICROCHIP",
+      "semi": "SEMI.ORG"
+    }
+  },
+  "header_menu": {
+    "Application": "Application",
+    "Web Application Development": "Web Application Development",
+    "Mobile App Development": "Mobile App Development",
+    "Cloud Integration": "Cloud Integration",
+    "API Development": "API Development",
+    "Hardware": "Hardware",
+    "PCB Design": "PCB Design",
+    "FPGA Development": "FPGA Development",
+    "Chip Design": "Chip Design",
+    "Testing & Validation": "Testing & Validation",
+    "Embedded Software": "Embedded Software",
+    "RTOS Development": "RTOS Development",
+    "Device Driver Development": "Device Driver Development",
+    "Firmware Development": "Firmware Development",
+    "IoT Integration": "IoT Integration",
+    "System Optimization": "System Optimization",
+    "Hardware-Software Integration": "Hardware-Software Integration",
+    "Industries": "Industries",
+    "Automotive": "Automotive",
+    "Medical": "Medical",
+    "Semiconductor": "Semiconductor",
+    "Telecom": "Telecom",
+    "Resources": "Resources",
+    "Blogs": "Blogs",
+    "Case Studies": "Case Studies",
+    "Whitepapers": "Whitepapers",
+    "About Us": "About Us",
+    "Company Overview": "Company Overview",
+    "Leadership": "Leadership",
+    "Testimonials": "Testimonials",
+    "Partnerships": "Partnerships",
+    "Find a job": "Find a job",
+    "Search for jobs": "Search for jobs",
+    "Career areas": "Career areas",
+    "Life at UANDWE": "Life at UANDWE",
+    "Working here": "Working here",
+    "Benefits": "Benefits",
+    "Work environment": "Work environment",
+    "Careers blog": "Careers blog",
+    "How we hire": "How we hire",
+    "Using AI": "Using AI",
+    "Hiring journey": "Hiring journey",
+    "Pro tips": "Pro tips"
+  },
+  "contact": {
+    "heading_1": "CONTACT",
+    "heading_2": "US",
+    "global_nodes": "GLOBAL NODES",
+    "form_title": "Connect With Us",
+    "name": "NAME",
+    "name_placeholder": "Full name",
+    "email": "EMAIL",
+    "email_placeholder": "Email",
+    "message": "MESSAGE",
+    "message_placeholder": "Tell us about your project...",
+    "send_button": "Send Message →",
+    "locations": {
+      "america": {
+        "name": "AMERICA",
+        "city": "San Jose, USA",
+        "address_1": "2535 Amaryl Dr",
+        "address_2": "San Jose, CA 95132",
+        "address_3": ""
+      },
+      "india": {
+        "name": "INDIA",
+        "city": "Bangalore, India",
+        "address_1": "Novel MSR Building",
+        "address_2": "Marathahalli Village",
+        "address_3": "Bengaluru, Karnataka 560037"
+      },
+      "china": {
+        "name": "CHINA",
+        "city": "Shanghai, China",
+        "address_1": "张江路 665号 德宏大厦9楼908",
+        "address_2": "浦东新区 上海市",
+        "address_3": "邮政编码: 201203"
+      }
+    }
+  },
+  "footer": {
+    "desc": "Engineering the future through precision, intelligence, and relentless innovation.",
+    "company_title": "Company",
+    "company_links": {
+      "About Us": "About Us",
+      "Innovation": "Innovation",
+      "Careers": "Careers",
+      "Newsroom": "Newsroom",
+      "Investors": "Investors"
+    },
+    "services_title": "Services",
+    "services_links": {
+      "Semiconductor Eng.": "Semiconductor Eng.",
+      "Embedded Systems": "Embedded Systems",
+      "Automotive": "Automotive",
+      "AI & Software": "AI & Software",
+      "Consulting": "Consulting"
+    },
+    "contact_title": "Contact",
+    "headquarters_label": "Headquarters",
+    "headquarters_value": "Bengaluru, India",
+    "email_label": "Email",
+    "phone_label": "Phone",
+    "copyright": "© 2025 UANDWE Technologies Pvt. Ltd.",
+    "bottom_links": {
+      "Privacy Policy": "Privacy Policy",
+      "Terms of Use": "Terms of Use",
+      "Cookies": "Cookies"
+    }
+  }
+}

@@ -1,0 +1,320 @@
+{
+  "header": {
+    "what_we_do": "我们做什么",
+    "what_we_think": "我们的想法",
+    "who_we_are": "我们是谁",
+    "careers": "招贤纳士",
+    "search_placeholder": "您在寻找什么？",
+    "search_results": "搜索结果",
+    "no_results": "未找到相关结果",
+    "languages": {
+      "china": "中国",
+      "canada": "加拿大",
+      "india": "印度",
+      "usa": "美国"
+    }
+  },
+  "hero": {
+    "title_1": "创新与",
+    "title_2": "卓越工程的交汇点。",
+    "description": "一个由充满激情的科技企业家组成的团队，致力于成就您的产品成功。"
+  },
+  "about": {
+    "heading": {
+      "line1": "塑造",
+      "line2": "明天的",
+      "line3": "科技，",
+      "highlight": "就在今天"
+    },
+    "cards": {
+      "vision": {
+        "title": "愿景",
+        "desc": "通过弥合尖端技术与人类潜能之间的差距，赋能全球创新。",
+        "footer": "视角"
+      },
+      "mission": {
+        "title": "使命",
+        "desc": "我们在硬件、嵌入式系统和软件解决方案领域提供卓越的工程技术。",
+        "footer": "目的"
+      },
+      "origin": {
+        "title": "起源",
+        "desc": "由富有远见的工程师创立，我们已发展成为全球技术创新中心。",
+        "footer": "历史"
+      }
+    }
+  },
+  "industries": {
+    "heading_part1": "我们赋能的",
+    "heading_part2": "行业",
+    "view_solutions": "查看解决方案",
+    "items": {
+      "semiconductor": {
+        "title": "半导体",
+        "desc": "通过先进的芯片设计、高性能处理器和可扩展的硅解决方案，为现代技术奠定基础。"
+      },
+      "telecom": {
+        "title": "通信与网络",
+        "desc": "利用下一代电信基础设施、5G网络和可扩展云通信系统，实现高速连接。"
+      },
+      "automotive": {
+        "title": "汽车",
+        "desc": "凭借高级驾驶辅助系统、电动汽车平台和智能安全解决方案，驱动出行的未来。"
+      },
+      "medical": {
+        "title": "医疗",
+        "desc": "通过精密机器人、智能诊断和实时医学成像技术，推动医疗保健的变革。"
+      }
+    }
+  },
+  "services": {
+    "explore_now": "立即探索",
+    "core_part1": "核心",
+    "core_part2": "服务",
+    "categories": {
+      "embedded_sw": {
+        "title": "嵌入式软件",
+        "services": {
+          "s1": {
+            "name": "设备驱动程序",
+            "desc": "自定义硬件交互层。"
+          },
+          "s2": {
+            "name": "固件开发",
+            "desc": "低级系统编程。"
+          },
+          "s3": {
+            "name": "实时操作系统开发",
+            "desc": "实时任务调度。"
+          },
+          "s4": {
+            "name": "嵌入式开源系统",
+            "desc": "自定义操作系统移植和优化。"
+          },
+          "s5": {
+            "name": "板级支持包开发",
+            "desc": "板级支持包创建。"
+          },
+          "s6": {
+            "name": "协议集成",
+            "desc": "内部集成电路、串行外设接口、局域网控制器总线等。"
+          }
+        }
+      },
+      "application": {
+        "title": "应用程序",
+        "services": {
+          "s1": {
+            "name": "门户网站开发",
+            "desc": "定制化网页门户，旨在简化您的业务运营。"
+          },
+          "s2": {
+            "name": "应用开发",
+            "desc": "为苹果、安卓及跨平台提供高性能移动应用。"
+          },
+          "s3": {
+            "name": "云解决方案",
+            "desc": "使用微软云平台构建高度可扩展且富有弹性的云基础设施。"
+          },
+          "s4": {
+            "name": "全栈开发",
+            "desc": "直观的用户界面与稳健的高性能服务器端架构。"
+          },
+          "s5": {
+            "name": "应用程序接口与系统集成",
+            "desc": "通过强大、安全的应用程序接口，无缝连接各系统与服务。"
+          },
+          "s6": {
+            "name": "测试与验证",
+            "desc": "通过全面的测试协议，确保软件的高可靠性与性能。"
+          }
+        }
+      },
+      "hardware_design": {
+        "title": "硬件设计",
+        "services": {
+          "s1": {
+            "name": "印刷电路板设计",
+            "desc": "多层高速电路板布局。"
+          },
+          "s2": {
+            "name": "现场可编程逻辑门阵列设计",
+            "desc": "自定义数字逻辑实现。"
+          },
+          "s3": {
+            "name": "专用集成电路设计",
+            "desc": "专用集成电路。"
+          },
+          "s4": {
+            "name": "电路设计",
+            "desc": "模拟和数字电路原理图。"
+          },
+          "s5": {
+            "name": "硬件原型制作",
+            "desc": "快速制造和组装。"
+          },
+          "s6": {
+            "name": "硬件验证",
+            "desc": "严格的测试和合规性。"
+          }
+        }
+      },
+      "ai_ml": {
+        "title": "人工智能与机器学习",
+        "services": {
+          "s1": {
+            "name": "车牌识别系统 (ALPR)",
+            "desc": "高精度自动车牌识别。"
+          },
+          "s2": {
+            "name": "颜色检测",
+            "desc": "实时车辆颜色分类。"
+          },
+          "s3": {
+            "name": "品牌与型号检测",
+            "desc": "自动识别车辆品牌与型号。"
+          },
+          "s4": {
+            "name": "车辆分类",
+            "desc": "按类型和尺寸对车辆进行分类。"
+          },
+          "s5": {
+            "name": "车辆轨迹跟踪",
+            "desc": "跨摄像头车辆轨迹分析。"
+          },
+          "s6": {
+            "name": "边缘人工智能",
+            "desc": "设备端人工智能模型部署，实现零延迟处理。"
+          }
+        }
+      }
+    }
+  },
+  "whyus": {
+    "heading_1": "合作伙伴",
+    "heading_2": "",
+    "desc": "与行业领导者合作，加速创新并交付世界级的工程解决方案。",
+    "categories": {
+      "customer_gtm": "客户与市场推广合作伙伴",
+      "industry": "行业合作伙伴关系"
+    },
+    "partners": {
+      "nvidia": "英伟达",
+      "renesas": "瑞萨电子",
+      "microchip": "微芯科技",
+      "semi": "国际半导体产业协会"
+    }
+  },
+  "header_menu": {
+    "Application": "应用程序",
+    "Web Application Development": "网页应用程序开发",
+    "Mobile App Development": "移动应用开发",
+    "Cloud Integration": "云集成",
+    "API Development": "应用程序接口开发",
+    "Hardware": "硬件",
+    "PCB Design": "印刷电路板设计",
+    "FPGA Development": "现场可编程逻辑门阵列开发",
+    "Chip Design": "芯片设计",
+    "Testing & Validation": "测试与验证",
+    "Embedded Software": "嵌入式软件",
+    "RTOS Development": "实时操作系统开发",
+    "Device Driver Development": "设备驱动程序开发",
+    "Firmware Development": "固件开发",
+    "IoT Integration": "物联网集成",
+    "System Optimization": "系统优化",
+    "Hardware-Software Integration": "软硬件集成",
+    "Industries": "行业",
+    "Automotive": "汽车",
+    "Medical": "医疗",
+    "Semiconductor": "半导体",
+    "Telecom": "电信",
+    "Resources": "资源",
+    "Blogs": "博客",
+    "Case Studies": "案例研究",
+    "Whitepapers": "白皮书",
+    "About Us": "关于我们",
+    "Company Overview": "公司概况",
+    "Leadership": "领导团队",
+    "Testimonials": "客户评价",
+    "Partnerships": "合作伙伴关系",
+    "Find a job": "寻找工作",
+    "Search for jobs": "搜索工作",
+    "Career areas": "职业领域",
+    "Life at UANDWE": "UANDWE的生活",
+    "Working here": "在这里工作",
+    "Benefits": "福利",
+    "Work environment": "工作环境",
+    "Careers blog": "招聘博客",
+    "How we hire": "我们的招聘方式",
+    "Using AI": "使用人工智能",
+    "Hiring journey": "招聘流程",
+    "Pro tips": "专业提示"
+  },
+  "contact": {
+    "heading_1": "联系",
+    "heading_2": "我们",
+    "desc": "与我们的全球工程中心建立联系。",
+    "global_nodes": "全球节点",
+    "form_title": "联系我们",
+    "name": "姓名",
+    "name_placeholder": "全名",
+    "email": "电子邮箱",
+    "email_placeholder": "电子邮箱",
+    "message": "留言",
+    "message_placeholder": "告诉我们您的项目...",
+    "send_button": "发送消息 →",
+    "locations": {
+      "america": {
+        "name": "美洲",
+        "city": "美国，圣何塞",
+        "address_1": "阿马里尔大道 2535号",
+        "address_2": "加利福尼亚州 圣何塞 95132",
+        "address_3": ""
+      },
+      "india": {
+        "name": "印度",
+        "city": "印度，班加罗尔",
+        "address_1": "诺维尔MSR大厦",
+        "address_2": "马拉塔哈利村",
+        "address_3": "卡纳塔克邦 班加罗尔 560037"
+      },
+      "china": {
+        "name": "中国",
+        "city": "中国，上海",
+        "address_1": "张江路 665号 德宏大厦9楼908",
+        "address_2": "浦东新区 上海市",
+        "address_3": "邮政编码: 201203"
+      }
+    }
+  },
+  "footer": {
+    "desc": "通过精确、智能和不懈的创新设计未来。",
+    "company_title": "公司",
+    "company_links": {
+      "About Us": "关于我们",
+      "Innovation": "创新",
+      "Careers": "招贤纳士",
+      "Newsroom": "新闻中心",
+      "Investors": "投资者"
+    },
+    "services_title": "服务",
+    "services_links": {
+      "Semiconductor Eng.": "半导体工程",
+      "Embedded Systems": "嵌入式系统",
+      "Automotive": "汽车",
+      "AI & Software": "人工智能与软件",
+      "Consulting": "咨询"
+    },
+    "contact_title": "联系方式",
+    "headquarters_label": "总部",
+    "headquarters_value": "印度，班加罗尔",
+    "email_label": "电子邮箱",
+    "phone_label": "电话",
+    "copyright": "© 2025 UANDWE Technologies Pvt. Ltd.",
+    "bottom_links": {
+      "Privacy Policy": "隐私政策",
+      "Terms of Use": "使用条款",
+      "Cookies": "缓存策略"
+    }
+  }
+}
